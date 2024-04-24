@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border-radius: 25px;
+}
+
+.nav{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 150px;
+  margin-right: 0px;
+  height: 150px;
+}
+.inicio{
+  margin-left: 0px;
+}
+
+h1{
+  text-align: center;
+  color: black;
+}
+.texto-img{
+  margin-bottom: 200px;
+}
+p{
+  color: black;
+}
+.fondo{
+  opacity: 0.5;
+  height: 650px;
+  object-fit: cover;
+}
+.galery {  
+  margin-left: 0px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+  grid-template-areas:
+    "frente cama door"
+    "gale camita puerta"
+    "arbol bos parrila";
+}
+
+.galery img{
+  width: 400px;
+  height: 300px;
+}
+.i1{
+  grid-area: frente;
+}
+.i2{
+  grid-area: cama;
+}
+.i3{
+  grid-area: door;
+}
+.i4{
+  grid-area: gale;
+}
+.i5{
+  grid-area: camita;
+}
+.i6{
+  grid-area: puerta;
+}
+.i7{
+  grid-area: arbol;
+}
+.i8{
+  grid-area: bos;
+}
+.i9{
+  grid-area: parrila;
+}
+
+.footer{
+  background-color: #e7d5d6;
+}
+@media screen and (max-width:720px){
+  
+  nav{
+    width: 100vw;
+  }
+  .logo{
+    height: 35px;
+    width: 35px;
+    margin-bottom: 5px;
+  }
+  .fondo{
+    opacity: 0.5;
+    height: 100vh;
+    object-fit: cover;
+    width: 100vw;
+  }
+  .texto-img{
+    text-align: center;
+  }
+  .ubicacion{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+ 
+  .mapa{
+    width: 350px;
+    height: 400px;
+  }
+
+  .items-izq p{
+    text-align: left;
+    margin-left: 30px;
+  }
+  .items-der p{
+    text-align: right;
+    margin-right: 30px;
+  }
+  .galery{
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .carousel{
+    width: 90vw;
+  }
+  
+  .carousel img{
+    object-fit: cover;
+  }
+
+  .contacto{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 15px;
+      grid-auto-flow: row;
+      height: 100vh;
+      grid-template-areas:
+        "whats"
+        "ig"
+        "mail";
+        margin-top: 40px;
+    
+  }
+  .wp{
+    grid-area: whats;
+  }
+  .ig{
+    grid-area: ig;
+  }
+  .mail{
+    grid-area: mail;
+  }
+  .contact-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-data img{
+    width: 100px;
+  }
+  h2{
+    text-align: center;
+  }
+  .up button{ 
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    border: 0px;
+    z-index: 999998;
+    left: 0px;
+  }
+  
+  .wpp button{
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    border: 0px;
+    z-index: 999998;
+    right: 0px;
+    border-radius: 50px;
+  }
+  .wpp img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 500px;
+   
+  }
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.day {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.day:hover {
+    background-color: #f0f0f0;
+}
+
+.ocupado{
+  background-color: #b30417;
+}
+
+.disponible{
+  background-color: #acef56;
+}
+
+}
