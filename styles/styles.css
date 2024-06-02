@@ -18,7 +18,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  gap: 150px;
+ /*  gap: 150px; */
   margin-right: 0px;
   height: 150px;
 }
@@ -41,51 +41,65 @@ p{
   height: 650px;
   object-fit: cover;
 }
-.galery {  
-  margin-left: 0px;
+.galery-desktop{
   display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 15px;
-  grid-template-areas:
-    "frente cama door"
-    "gale camita puerta"
-    "arbol bos parrila";
+  justify-items: start;
+  height: 100vh;
+  align-self: center;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
+  grid-template-areas: 
+  "frente frente2 bosque"
+  "habitaciones habitaciones-2 habitaciones-3";
+  img{
+    width: 400px;
+    height: 300px;
+  }
 }
+
+.frente{
+  grid-area: frente;
+ 
+}
+.front{
+  grid-area: frente2;
+  
+}
+.bosque{
+  grid-area: bosque;
+ 
+}
+
+.habitaciones{
+  grid-area: habitaciones;
+ 
+}
+.habitaciones-2{
+  grid-area: habitaciones-2;
+ 
+}
+.habitaciones-3{
+  grid-area: habitaciones-3;
+  
+}
+.galery {  
+  display: none;
+}
+
 
 .galery img{
   width: 400px;
   height: 300px;
 }
-.i1{
-  grid-area: frente;
+.items-izq p{
+  text-align: left;
+  margin-left: 30px;
 }
-.i2{
-  grid-area: cama;
+.items-der p{
+  text-align: right;
+  margin-right: 30px;
 }
-.i3{
-  grid-area: door;
-}
-.i4{
-  grid-area: gale;
-}
-.i5{
-  grid-area: camita;
-}
-.i6{
-  grid-area: puerta;
-}
-.i7{
-  grid-area: arbol;
-}
-.i8{
-  grid-area: bos;
-}
-.i9{
-  grid-area: parrila;
-}
-
 .footer{
   background-color: #e7d5d6;
 }
@@ -116,7 +130,9 @@ p{
     justify-content: center;
     height: 100vh;
   }
- 
+ .galery-desktop{
+  display: none;
+ }
   .mapa{
     width: 350px;
     height: 400px;
@@ -133,6 +149,8 @@ p{
   .galery{
     display: flex;
     flex-direction: column; 
+    gap: 20px;
+    align-items: center;
   }
 
   .carousel{
