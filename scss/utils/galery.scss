@@ -1,0 +1,16 @@
+.galery-desktop{
+  display: none;
+ }
+
+.galery{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center;
+    .carousel{
+      width: 90vw;
+      .carousel img{
+        object-fit: cover;
+      }
+    }
+  }

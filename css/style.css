@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins"; }
+
+.logo {
+  width: 40px;
+  height: 40px; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border-radius: 25px; }
+
+.nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 0px;
+  height: 50px; }
+
+.fondo {
+  opacity: 0.5;
+  height: 650px;
+  object-fit: cover; }
+
+h1 {
+  text-align: center;
+  color: black; }
+
+.inicio {
+  margin-left: 0px; }
+
+.ubicacion, .descripcion {
+  margin-top: 20px; }
+
+.texto-img {
+  margin-bottom: 200px; }
+
+.mapa {
+  width: 500px;
+  height: 300px; }
+
+.galery img {
+  width: 400px;
+  height: 300px; }
+
+.items-izq p {
+  text-align: left;
+  margin-left: 30px; }
+
+.items-der p {
+  text-align: right;
+  margin-right: 30px; }
+
+h2 {
+  text-align: center; }
+
+p {
+  color: black; }
+
+.footer {
+  background-color: #e7d5d6; }
+
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  grid-template-areas: "whats ig mail"; }
+  .contacto .wp {
+    grid-area: whats; }
+  .contacto .ig {
+    grid-area: ig; }
+  .contacto .mail {
+    grid-area: mail; }
+  .contacto .contact-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contacto .contact-data img {
+    width: 100px; }
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px; }
+  .calendar .month {
+    text-align: center; }
+  .calendar .day {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc; }
+  .calendar .day:hover {
+    background-color: #f0f0f0; }
+  .calendar .ocupado {
+    background-color: #b30417; }
+  .calendar .disponible {
+    background-color: #acef56; }
+
+.galery-desktop {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: grid;
+  justify-items: start;
+  height: 100vh;
+  align-self: center;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
+  grid-template-areas: "frente frente2 bosque" "habitaciones habitaciones-2 habitaciones-3"; }
+  .galery-desktop img {
+    width: 400px;
+    height: 300px; }
+  .galery-desktop .frente {
+    grid-area: frente; }
+  .galery-desktop .front {
+    grid-area: frente2; }
+  .galery-desktop .bosque {
+    grid-area: bosque; }
+  .galery-desktop .habitaciones {
+    grid-area: habitaciones; }
+  .galery-desktop .habitaciones-2 {
+    grid-area: habitaciones-2; }
+  .galery-desktop .habitaciones-3 {
+    grid-area: habitaciones-3; }
+
+.galery {
+  display: none; }
+
+.up button {
+  width: 30px;
+  height: 30px;
+  margin: 10px 20px;
+  position: fixed;
+  bottom: 0px;
+  border: 0px;
+  z-index: 999998;
+  left: 0px; }
+
+.wpp button {
+  width: 50px;
+  height: 50px;
+  margin: 10px 20px;
+  position: fixed;
+  bottom: 0px;
+  border: 0px;
+  z-index: 999998;
+  right: 0px;
+  border-radius: 50px; }
+
+.wpp img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 500px; }
+
+.ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; }
+
+@media screen and (max-width: 720px) {
+  nav {
+    width: 100vw; }
+  .logo {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 5px; }
+  .fondo {
+    opacity: 0.5;
+    height: 100vh;
+    object-fit: cover;
+    width: 100vw; }
+  .ubicacion {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; }
+    .ubicacion .mapa {
+      width: 350px;
+      height: 400px; }
+  .texto-img {
+    text-align: center; }
+  .items-izq p {
+    text-align: left;
+    margin-left: 30px; }
+  .items-der p {
+    text-align: right;
+    margin-right: 30px; }
+  h2 {
+    text-align: center; }
+  .galery-desktop {
+    display: none; }
+  .galery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; }
+    .galery .carousel {
+      width: 90vw; }
+      .galery .carousel .carousel img {
+        object-fit: cover; }
+  .contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 15px;
+    grid-auto-flow: row;
+    height: 100vh;
+    grid-template-areas: "whats" "ig" "mail";
+    margin-top: 40px; }
+    .contacto .wp {
+      grid-area: whats; }
+    .contacto .ig {
+      grid-area: ig; }
+    .contacto .mail {
+      grid-area: mail; }
+    .contacto .contact-data {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .contacto .contact-data img {
+      width: 100px; }
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .calendar .day {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ccc; }
+    .calendar .day:hover {
+      background-color: #f0f0f0; }
+    .calendar .ocupado {
+      background-color: #b30417; }
+    .calendar .disponible {
+      background-color: #acef56; }
+  .up button {
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    border: 0px;
+    z-index: 999998;
+    left: 0px; }
+  .wpp button {
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    border: 0px;
+    z-index: 999998;
+    right: 0px;
+    border-radius: 50px; }
+  .wpp img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 500px; } }

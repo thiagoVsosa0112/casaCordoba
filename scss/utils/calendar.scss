@@ -1,0 +1,54 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    .day {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+  }
+  .day:hover {
+      background-color: #f0f0f0;
+  }
+  
+  .ocupado{
+    background-color: #b30417;
+  }
+  
+  .disponible{
+    background-color: #acef56;
+  }
+}
+  .up button{ 
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    border: 0px;
+    z-index: 999998;
+    left: 0px;
+  }
+  
+  .wpp button{
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    position: fixed;
+    bottom: 0px;
+    border: 0px;
+    z-index: 999998;
+    right: 0px;
+    border-radius: 50px;
+  }
+  .wpp img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 500px;
+   
+  }
+
+
