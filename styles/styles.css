@@ -6,7 +6,10 @@
   text-decoration: none;
   font-family: "Poppins";
 }
-
+.logo{
+  width: 40px;
+  height: 40px;
+}
 .header{
   display: flex;
   flex-direction: column;
@@ -20,12 +23,14 @@
   align-items: center;
  /*  gap: 150px; */
   margin-right: 0px;
-  height: 150px;
+  height: 50px;
 }
 .inicio{
   margin-left: 0px;
 }
-
+.ubicacion, .descripcion{
+  margin-top: 20px;
+}
 h1{
   text-align: center;
   color: black;
@@ -36,17 +41,29 @@ h1{
 p{
   color: black;
 }
+.ubicacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.mapa{
+  width: 500px;
+  height: 300px;
+}
 .fondo{
   opacity: 0.5;
   height: 650px;
   object-fit: cover;
 }
 .galery-desktop{
+  margin-left: 20px;
+  margin-right: 20px;
   display: grid;
   justify-items: start;
   height: 100vh;
   align-self: center;
-  gap: 5px;
+  
   grid-template-columns: 1fr 1fr;
   grid-row: 1fr 1fr;
   grid-template-areas: 
@@ -102,6 +119,87 @@ p{
 }
 .footer{
   background-color: #e7d5d6;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+.month{
+  text-align: center;
+}
+.day {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.day:hover {
+  background-color: #f0f0f0;
+}
+
+.ocupado{
+background-color: #b30417;
+}
+
+.disponible{
+background-color: #acef56;
+}
+.contacto{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  grid-template-areas:
+    "whats ig mail";
+}
+.wp{
+grid-area: whats;
+}
+.ig{
+grid-area: ig;
+}
+.mail{
+grid-area: mail;
+}
+.contact-data{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.contact-data img{
+width: 100px;
+}
+h2{
+text-align: center;
+}
+.up button{ 
+width: 30px;
+height: 30px;
+margin: 10px 20px;
+position: fixed;
+bottom: 0px;
+border: 0px;
+z-index: 999998;
+left: 0px;
+}
+
+.wpp button{
+width: 50px;
+height: 50px;
+margin: 10px 20px;
+position: fixed;
+bottom: 0px;
+border: 0px;
+z-index: 999998;
+right: 0px;
+border-radius: 50px;
+}
+.wpp img{
+object-fit: cover;
+width: 50px;
+height: 50px;
+border-radius: 500px;
+
 }
 @media screen and (max-width:720px){
   
