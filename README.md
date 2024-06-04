@@ -1,7 +1,7 @@
 ## Las Soñadas Margaritas
-//Project about a holiday´s house located in Córdoba, Argentina.
+//Project about a holiday´s house located in Córdoba, Argentina. 
 
-//The project has realized with HTML, CSS, SASS and Bootstrap. 
+//It has realized with HTML, CSS, SASS and Bootstrap. 
 
 
 
