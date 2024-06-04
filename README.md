@@ -1,6 +1,10 @@
 ## Las Soñadas Margaritas
+//Project about a holiday´s house located in Córdoba, Argentina.
+//The project has realized with HTML, CSS, SASS and Bootstrap. 
+
+
+
 // Proyecto sobre una casa de vacaciones ubicada en la provincia de Córdoba, Argentina.
+//Realizado con HTML, CSS, SASS, Bootstrap. Además se incluyeron librerías de animaciones como Animate.css y AOS 🔥
 
-//Realizado con ![image](https://github.com/thiagoVsosa0112/casaCordoba/assets/158784572/fe0a09a4-d5bb-453d-a00f-ee95308f4204)
-, CSS, SASS, Bootstrap. Y librerías de animaciones como Animate.css y AOS 🔥
-
+https://github.com/vbriand/vbriand#bonjour--  https://github.com/vbriand/vbriand#bonjour--  https://github.com/vbriand/vbriand#learning-next 
