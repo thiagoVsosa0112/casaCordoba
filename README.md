@@ -10,7 +10,15 @@
 
 //Realizado con HTML, CSS, SASS, Bootstrap. Además se incluyeron librerías de animaciones como Animate.css y AOS🔥
 
+Desktop:
+
 https://github.com/thiagoVsosa0112/casaCordoba/assets/158784572/cd63a8c2-5d14-45a9-b6e9-01eb14a7412e
+
+Responsive:
+
+https://github.com/thiagoVsosa0112/casaCordoba/assets/158784572/f237b527-d2cd-455d-a3f0-5ac7dcbf5c47
+
+
 
 
 ![image](https://github.com/thiagoVsosa0112/casaCordoba/assets/158784572/c144fe57-bee8-4e0c-a8cd-810e6de380e7) ![image](https://github.com/thiagoVsosa0112/casaCordoba/assets/158784572/f1f3bed1-8f67-47cc-860b-4928d5e1f77d) ![image](https://github.com/thiagoVsosa0112/casaCordoba/assets/158784572/0895e603-054d-4a3b-9b6b-070de6371a4f)
