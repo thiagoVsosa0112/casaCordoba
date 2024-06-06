@@ -19,6 +19,7 @@
     bottom: 0;
     background-color: black;
     padding: 2rem;
+    z-index: 1;
   }
   .nav-list{
     flex-direction: column;
@@ -38,5 +39,7 @@
     object-fit: cover;
     width: 100vw;
   }
- 
+  .title, .subtitle{
+    z-index: 1;
+  }
   

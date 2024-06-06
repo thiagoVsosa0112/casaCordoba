@@ -2,12 +2,7 @@
     width: 40px;
     height: 40px;
   }
-/*   .header{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    border-radius: 25px;
-  } */
+
   .header{
     display: flex;
     align-items: center;
@@ -36,7 +31,9 @@
     }
   }
   .fondo{
-    opacity: 0.5;
     height: 650px;
     object-fit: cover;
+  }
+  .title, .subtitle{
+    z-index: 1;
   }
