@@ -17,32 +17,29 @@
 
 <body>
   <header class="header">
-    <nav id="nav" class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand inicio" href="./index.html"><img src="./img/flower3.svg" class="logo" alt="logo margarita">Las
-          soñadas margaritas</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse nav" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#ubicacion">Ubicación</a>
+    <div>
+      <a class="navbar-brand inicio" href="./index.html"><img src="./img/flower3.svg" class="logo" alt="logo margarita">
+        Las soñadas margaritas
+      </a>
+    </div> 
+    <button id="open" class="open-menu"><i class="bi bi-list"></i></button>
+        <nav id="nav" class="nav">
+          <button id="close" class="close-menu"><i class="bi bi-x-lg"></i></button>
+          <ul class="nav-list">
+            <li>
+              <a href="#ubicacion">Ubicación</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#description">Descripción</a>
+            <li>
+              <a href="#description">Descripción</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#galeria">Galería</a>
+            <li>
+              <a href="#galeria">Galería</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto y disponibilidad</a>
+            <li>
+              <a href="#contacto">Contacto y disponibilidad</a>
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
+        </nav>
   </header>
   <main class="principal">
     <div class="carousel-inner">
@@ -285,8 +282,9 @@
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init(); 
   </script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
