@@ -36,7 +36,8 @@ button {
 
 .fondo {
   height: 650px;
-  object-fit: cover; }
+  object-fit: cover;
+  opacity: 0.7; }
 
 .title, .subtitle {
   z-index: 1; }
@@ -208,7 +209,8 @@ p {
   .fondo {
     height: 90vh;
     object-fit: cover;
-    width: 100vw; }
+    width: 100vw;
+    opacity: 0.7; }
   .title, .subtitle {
     z-index: 1; }
   .ubicacion {
